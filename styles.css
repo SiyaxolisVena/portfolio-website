@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; 
+}
+
+.container {
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.skills-icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+span{
+    color: rgb(204, 0, 102); 
+}
+
+.card {
+    background-color:rgb(255, 153, 204);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+}
+.card h3 {
+    font-size: 1.2em; 
+    margin-bottom: 8px;
+}
+
+.card h4 {
+    font-size: 1em; 
+    margin: 5px 0; 
+}
+.card p {
+    font-size: 0.9em; 
+    line-height: 1.4; 
+    margin-bottom: 8px; 
+}
+
+.card ul {
+    font-size: 0.9em; 
+    padding-left: 15px; 
+}
+
+.card ul li {
+    margin-bottom: 5px; 
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    border: 1px solid rgb(204, 0, 102);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin: 10px 0 5px;
+}
+
+.project-card p {
+    margin: 0;
+}
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(204, 0, 102);
+}
+h4 {
+    margin-top: 20px;  
+    margin-bottom: 10px; 
+}
+@media (max-width: 768px) {
+    .grid, .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+  footer{
+    background-color:rgb(255, 153, 204);
+}
+.footerContainer{
+    width: 100%;
+    padding: 10px 10px 10px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1em;
+    color: black;
+    opacity: 0,9;
+}
+
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(204, 0, 102);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 150px;
+        border-radius: 5px;
+        padding: 5px 0;
+    }
+
+    nav ul li a {
+        padding: 5px 5px;
+    }
+
+    .menu-toggle:checked ~ ul {
+        display: flex;
+    }
+}
