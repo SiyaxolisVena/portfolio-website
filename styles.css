@@ -1,8 +1,121 @@
+@import url();
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+ /* Chatbot Icon */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:rgb(204, 0, 102);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+ 
+/* Chatbot Window */
+.chatbot {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background: rgb(255, 153, 204);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    z-index: 999;
+    overflow: hidden;
+}
+ 
+/* Chatbot Header */
+.chatbot header {
+    background: rgb(204, 0, 102);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.chatbot header h2 {
+    font-size: 18px;
+}
+ 
+.chatbot header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+/* Chatbox Messages */
+.chatbox {
+    list-style: none;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+ 
+/* Chat Messages */
+.chat.incoming p, .chat.outgoing p {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+ 
+.chat.incoming p {
+    background: #f1f1f1;
+    align-self: flex-start;
+}
+ 
+.chat.outgoing p {
+    background: #d1f1ff;
+    align-self: flex-end;
+}
+ 
+/* Input Area */
+.input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;  
+}
+ 
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+}
+ 
+.input-area button {
+   
+        margin-left: 10px;
+        padding: 10px 20px;
+        background-color: rgb(204, 0, 102);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+ 
+/*chatbot end*/
 
 body {
     font-family: Arial, sans-serif;

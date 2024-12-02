@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Siyaxolisa Vena</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+          <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL,ROND@0..1,100&icon_names=home,palette,settings&display=block" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -90,7 +93,7 @@
                 <h4>C#</h4>
                 <p>Certification obtained in July 2021</p>
                 <p>Learned data storage, processing, security, and visualization in Azure.</p>
-                <h4>SQL</div>/h4>
+                <h4>SQL</h4>
                 <p>Capaciti, Current</p>
                 <p>Eager to learn skills to automate processes, manage cloud infrastructure, optimize workflows, and ensure high availability and reliability of applications.</p>
             </div>
@@ -126,25 +129,36 @@
             </div>
         </div>
     </section>
+    <div class="chatbot-icon" id="chatbotIcon">
+        <i class="fa-solid fa-robot"></i>
+    </div>
+   
+    <div class="chatbot" id="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <button id="minimizeBtn">–</button>
+        </header>
+      <ul class="chatbox">
+            <li class="chat incoming">
+                <p>Hi there <br> How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="input-area">
+            <input type="text" placeholder="Type your message..." id="userInput" />
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
 
-    <!-- <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: siyaxolisavena@gmail.com</p>
-        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
-            <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
-        </a>
-    </section> -->
-    <script>
-        function closeMenu() {
-            document.getElementById("menu-toggle").checked = false;
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 <footer>
     <div class="footerContainer">
         <div class="socialIcons">
+           
             <a href="https://www.linkedin.com/in/siyaxolisa-vena-b2bb96171/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/SiyaxolisVena"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/SiyaxolisVena"><i class='bx bx-envelope'></i></a>
+            <a href="https://github.com/SiyaxolisVena"><i class='bx bxs-phone-call' ></i></a>
         </div>       
     </div>
     <div class="footerBottom">
