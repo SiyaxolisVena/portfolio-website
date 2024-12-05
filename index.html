@@ -26,6 +26,7 @@
             <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
         </ul>
     </nav>
+    <div class="header-about-container">
     <header>
         <div class="container">
             <h1><span>Hi,</span> I'm Siyaxolisa Vena</h1>
@@ -43,7 +44,7 @@
            practices and continuously strive to create high-quality, end-to-end applications. 
            My passion for full-stack development drives me to craft scalable and robust solutions that exceed client expectations. With a keen eye for detail and a deep understanding of MySQL, I ensure the delivery of top-notch products that align with the client's vision and objectives.</p>
     </section>
-
+</div>
     <section id="experience-education" class="container">
         <h2>Experience, Education & Skills</h2>
         <div class="grid">
@@ -84,19 +85,32 @@
             </div>
             <div class="card">
                 <h3>Skills</h3>
-                <h4>React</h4>
-                <p>Walter Sisulu University, 2016 - 2020</p>
-                <p>Majored in Computer Science, Statistics, and Applied Mathematics.</p>
-                <h4>Angular</h4>
-                <p>Mindworx Academy, 2021 - 2022</p>
-                <p>Developed skills in business processes, requirements gathering, data analysis, and problem-solving.</p>
-                <h4>C#</h4>
-                <p>Certification obtained in July 2021</p>
-                <p>Learned data storage, processing, security, and visualization in Azure.</p>
-                <h4>SQL</h4>
-                <p>Capaciti, Current</p>
-                <p>Eager to learn skills to automate processes, manage cloud infrastructure, optimize workflows, and ensure high availability and reliability of applications.</p>
+                <div class="skills-category">
+                    <h4>Back-End</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><i class='bx bxl-nodejs'></i> Node.js</li>
+                        <li><i class="fas fa-server"></i> C#</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h4>Front-End</h4>
+                    <ul class="skills-list">
+                        <li><i class='bx bxl-react'></i> React</li>
+                        <li><i class='bx bxl-angular'></i> Angular</li>
+                        <li><i class="fas fa-code"></i> HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h4>Frameworks & Tools</h4>
+                    <ul class="skills-list">
+                        <li><i class='bx bxl-bootstrap'></i> Bootstrap</li>
+                        <li><i class='bx bxl-tailwind-css'></i> Tailwind CSS</li>
+                        <li><i class='bx bxl-figma'></i> Figma</li>
+                    </ul>
+                </div>
             </div>
+            
         </div>
     </section>
 
@@ -137,6 +151,7 @@
         <header>
             <h2>Chatbot</h2>
             <button id="minimizeBtn">–</button>
+            <button id="closeBtn">X</button>
         </header>
       <ul class="chatbox">
             <li class="chat incoming">
